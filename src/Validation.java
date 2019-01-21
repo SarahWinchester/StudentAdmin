@@ -6,7 +6,7 @@ public class Validation {
         if (!(id == null || id.isEmpty()) && ( "5".equalsIgnoreCase(id.substring(0,1))&&  id.length() == 5 )){
             for (Student student : StudentAdministration.getAddStudent()) {
                 if(student.getId().equals(id)){
-                    System.out.println("Id already exist, please, check again, student is not added." + id);
+                    System.out.println("The Id" + id +" already exist, please, check again,. The students was not added into the list" );
                     return false;
                 };
 
