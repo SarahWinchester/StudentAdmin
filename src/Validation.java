@@ -2,26 +2,39 @@ public class Validation {
 
 
     public static boolean validationId(String id){
-
-
-        if (!(id == null || id.isEmpty()) && ( id.substring(0,1)== "5" &&  id.length() == 5)){
+        if (!(id == null || id.isEmpty()) && ( "5".equalsIgnoreCase(id.substring(0,1))&&  id.length() == 5)){
             return true;
         }
-
         return false;
     }
 
-    public static boolean validationStageLvl(String lvl, String stage){
+    public static boolean validationStageLvl(String stage , String lvl){
 
         switch (Stages.valueOf(stage.toUpperCase())) {
             case KINDER:
-                if(lvl == )
+                if(lvl == "1ro" || lvl == "2do" || lvl == "3ro"){
+                 return true;
+                }else{
+                    System.out.println("select a valid lvl to kinder");
+                }
+                return false;
 
 
             case ELEMENTARY:
-
+                if(lvl=="1ro" ||lvl == "2do" || lvl == "3ro" || lvl == "4to" || lvl =="5to" || lvl == "6to"){
+                   return true;
+                }else{
+                    System.out.println("Select a valid level to elementary");
+                }
+                return  false;
 
             case JRHIGHSCHOOL:
+
+                if(lvl == "1ro"|| lvl == "2do" || lvl == "3ro"){
+                    return true;
+                }else {
+                    System.out.println("Select a valid level to Jr Highschool");
+                }
                 return true;
 
 
@@ -31,7 +44,7 @@ public class Validation {
 
         }
 
-        return false;
+
     }
     public static boolean validationStage(String stage){
 
