@@ -7,15 +7,38 @@ public class StudentAdministration {
 
     public static void main(String[] args) {
 
-        Student test = new Student();
+        //***********HARDCODED STUDENTS
+
         StudentAdministration test1 = new StudentAdministration();
         test1.registerStudent("50003", "luis", "cosos","3ro","Kinder");
         test1.registerStudent("50004","Sarah","Winchester","4to","Elementary");
-        System.out.println(test1.getAddStudent().size());
-        System.out.println(test1.getAddStudent().get(0).getId());
-        System.out.println(test1.getAddStudent().get(0).getName());
-        System.out.println(test1.getAddStudent().get(1).getId());
-        System.out.println(test1.getAddStudent().get(1).getName());
+        test1.registerStudent("50005","Indira","Ruiz","3ro","JrHighschool");
+        test1.registerStudent("50002","Ahri","Foxtail","2do","Kinder");
+        test1.registerStudent("50001","Sona","Pentakill","6to","Elementary");
+        test1.registerStudent("50006","Caithleen","Mayfair","1ro","Elementary");
+        test1.registerStudent("50007","Jhin","Opera","2do","Elementary");
+        test1.registerStudent("50008","Yasuo","Winter","2do","JrHighschool");
+        test1.registerStudent("50004","Camille","Strinds","1ro","JrHighschool");
+
+        //****************PRINTED STUDENTS
+
+        System.out.println("Students in database: " + test1.getAddStudent().size());
+
+
+        for (int i =0 ; i < test1.getAddStudent().size(); i++){
+            System.out.println("\n********************************************");
+            System.out.println("\nSTUDENT DATA");
+
+
+            System.out.println("\nID: " + test1.getAddStudent().get(i).getId());
+            System.out.println("NAME: " + test1.getAddStudent().get(i).getName());
+            System.out.println("LASTNAME: " + test1.getAddStudent().get(i).getLastName());
+            System.out.println("LVL: " + test1.getAddStudent().get(i).getLvl());
+            System.out.println("STAGE: " + test1.getAddStudent().get(i).getStage());
+
+
+        }
+
 
 
 
@@ -23,18 +46,18 @@ public class StudentAdministration {
 
     //variable de instancia
 
-    private List<Student> addStudent= new ArrayList();
+    private static List<Student> addStudent= new ArrayList();
 
 
 
     //*****************getters y setters
 
-    public List<Student> getAddStudent() {
+    public static List<Student> getAddStudent() {
         return addStudent;
     }
 
-    public void setAddStudent(List<Student> addStudent) {
-        this.addStudent = addStudent;
+    public static void setAddStudent(List<Student> addStudent) {
+        addStudent = addStudent;
     }
 
 

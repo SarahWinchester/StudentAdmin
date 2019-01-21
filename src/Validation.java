@@ -2,7 +2,15 @@ public class Validation {
 
 
     public static boolean validationId(String id){
-        if (!(id == null || id.isEmpty()) && ( "5".equalsIgnoreCase(id.substring(0,1))&&  id.length() == 5)){
+
+        if (!(id == null || id.isEmpty()) && ( "5".equalsIgnoreCase(id.substring(0,1))&&  id.length() == 5 )){
+            for (Student student : StudentAdministration.getAddStudent()) {
+                if(student.getId().equals(id)){
+                    System.out.println("Id already exist, please, check again, student is not added." + id);
+                    return false;
+                };
+
+            }
             return true;
         }
         return false;
