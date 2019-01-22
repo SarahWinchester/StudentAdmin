@@ -5,11 +5,100 @@ import java.util.List;
 
 public class StudentAdministration {
 
+    //variable de instancia
+
+    private static List<Student> studentList = new ArrayList();
+    private static List<Course> courselist = new ArrayList<>();
+
+
+
+    //*****************getters y setters
+
+
+    public static List<Course> getCourselist() {
+        return courselist;
+    }
+
+    public static void setCourselist(List<Course> courselist) {
+        StudentAdministration.courselist = courselist;
+    }
+
+    public static List<Student> getStudentList() {
+        return studentList;
+    }
+
+    public static void setStudentList(List<Student> studentList) {
+        studentList = studentList;
+    }
+
+
+    //**************metodo alta estudiante
+    public void registerStudent( String id, String name , String lastName, String lvl, String stage){
+
+        if(Validation.validationId(id) && Validation.validationStageLvl(stage, lvl)&& Validation.validationStage(stage)){
+
+            Student stu1 = new Student(id, name, lastName,lvl, stage);
+            studentList.add(stu1);
+            System.out.println("Data added correctly");
+
+        }else{
+            System.out.println("data is incorrect, Try again");
+        }
+    }
+
+    //*********+**metodo sobrecargado de alta estudiante
+
+    public  void registerStudent(String id, String name , String lastName, String lvl, String stage, List <Course> courseName){
+
+        if(Validation.validationId(id) && Validation.validationStageLvl(stage, lvl)&& Validation.validationStage(stage)){
+
+            Student overStud = new Student(id, name, lastName,lvl, stage, courseName);
+
+            studentList.add(overStud);
+
+            System.out.println("Data added correctly");
+
+        }else{
+            System.out.println("data is incorrect, Try again");
+        }
+
+    }
+
+    public void printStudent(){
+        //****************PRINTED STUDENTS
+
+        System.out.println("Students in database: " + studentList.size());
+
+
+        for (int i = 0; i < studentList.size(); i++){
+            System.out.println("\n********************************************");
+            System.out.println("\nSTUDENT DATA");
+
+
+            System.out.println("\nID: " + studentList.get(i).getId());
+            System.out.println("NAME: " + studentList.get(i).getName());
+            System.out.println("LASTNAME: " + studentList.get(i).getLastName());
+            System.out.println("LVL: " + studentList.get(i).getLvl());
+
+
+
+
+
+
+
+
+
+        }
+    }
+
+
+
     public static void main(String[] args) {
 
         //***********HARDCODED STUDENTS
 
         StudentAdministration test1 = new StudentAdministration();
+
         test1.registerStudent("50003", "luis", "cosos","3ro","Kinder");
         test1.registerStudent("50004","Sarah","Winchester","4to","Elementary");
         test1.registerStudent("50005","Indira","Ruiz","3ro","JrHighschool");
@@ -20,74 +109,27 @@ public class StudentAdministration {
         test1.registerStudent("50008","Yasuo","Winter","2do","JrHighschool");
         test1.registerStudent("50009","Camille","Strinds","1ro","JrHighschool");
 
+
+        //HARDCODED COURSES
+        Course course1 = new Course("",0);
+        Course course2 = new Course("x",1);
+        Course course3 = new Course("y",2);
+
+        List<Course> courses = new ArrayList<Course>();
+        courses.add(course1);
+        courses.add(course2);
+        courses.add(course3);
+
+        test1.registerStudent("50010","Ivan","Zornoza","3ro","Kinder",courses);
+
+
         //TO PRINT
 
-        /*StudentAdministration printed = new StudentAdministration();
-        printed.printStudent();*/
-
-
-
-
-    }
-
-    //variable de instancia
-
-    private static List<Student> addStudent= new ArrayList();
-
-
-
-    //*****************getters y setters
-
-    public static List<Student> getAddStudent() {
-        return addStudent;
-    }
-
-    public static void setAddStudent(List<Student> addStudent) {
-        addStudent = addStudent;
-    }
-
-
-    //**************metodos
-    public void registerStudent( String id, String name , String lastName, String lvl, String stage){
-
-        if(Validation.validationId(id) && Validation.validationStageLvl(stage, lvl)&& Validation.validationStage(stage)){
-            Student stu1 = new Student(id, name, lastName,lvl, stage);
-            addStudent.add(stu1);
-            System.out.println("Data added correctly");
-
-        }else{
-            System.out.println("data is incorrect, Try again");
-        }
-
+        StudentAdministration printed = new StudentAdministration();
+        printed.printStudent();
 
 
     }
-
-    public void printStudent(){
-        //****************PRINTED STUDENTS
-        StudentAdministration printStud = new StudentAdministration();
-
-        System.out.println("Students in database: " + printStud.getAddStudent().size());
-
-
-        for (int i =0 ; i < printStud.getAddStudent().size(); i++){
-            System.out.println("\n********************************************");
-            System.out.println("\nSTUDENT DATA");
-
-
-            System.out.println("\nID: " + printStud.getAddStudent().get(i).getId());
-            System.out.println("NAME: " + printStud.getAddStudent().get(i).getName());
-            System.out.println("LASTNAME: " + printStud.getAddStudent().get(i).getLastName());
-            System.out.println("LVL: " + printStud.getAddStudent().get(i).getLvl());
-            System.out.println("STAGE: " + printStud.getAddStudent().get(i).getStage());
-
-
-        }
-    }
-
-
-
-
 
 }
 

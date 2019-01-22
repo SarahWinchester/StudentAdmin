@@ -14,6 +14,10 @@ public class SchoolPersonal {
         this.group = group;
     }
 
+    public SchoolPersonal() {
+
+    }
+
     public int getTeacherId() {
         return teacherId;
     }

@@ -9,8 +9,8 @@ public class Student {
     private String lastName;
     private String lvl;
     private String stage = "stage";
-    private List courses ;
-    private float grades = -1;
+    private List courses;
+
 
     //Constructor to ask values without grades
 
@@ -24,14 +24,15 @@ public class Student {
     }
 
     //constructor with  course
-    public Student(String id, String name, String lastName, String lvl, String stage, List courses, float grades) {
+    public Student(String id, String name, String lastName, String lvl, String stage, List<Course> courses) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.lvl = lvl;
         this.stage = stage;
-        this.courses = courses;
-        this.grades = grades;
+        this.courses=courses;
+
+
     }
 
     public Student() {
@@ -80,21 +81,6 @@ public class Student {
         this.stage = stage;
     }
 
-    public List getCourses() {
-        return courses;
-    }
-
-    public void setCourses(List courses) {
-        this.courses = courses;
-    }
-
-    public float getGrades() {
-        return grades;
-    }
-
-    public void setGrades(float grades) {
-        this.grades = grades;
-    }
 
 
 }
