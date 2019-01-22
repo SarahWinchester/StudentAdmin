@@ -90,6 +90,13 @@ public class StudentAdministration {
 
         }
     }
+    public void printStudentWCourse( ){
+        // PRINT STUDENT WITH COURSE
+
+        for (int j = 0 ; j < courses.size(); j++){
+            System.out.println( "odcn" + studentL.get(j) + courses.get(j));
+        }
+    }
 
 
 
@@ -109,24 +116,30 @@ public class StudentAdministration {
         test1.registerStudent("50008","Yasuo","Winter","2do","JrHighschool");
         test1.registerStudent("50009","Camille","Strinds","1ro","JrHighschool");
 
+        //TO PRINT
+
+        StudentAdministration printed = new StudentAdministration();
+        printed.printStudent();
+
+
 
         //HARDCODED COURSES
-        Course course1 = new Course("",0);
-        Course course2 = new Course("x",1);
-        Course course3 = new Course("y",2);
+        Course course1 = new Course("Math",0);
+        Course course2 = new Course("Spanish",1);
+        Course course3 = new Course("Programming",2);
 
         List<Course> courses = new ArrayList<Course>();
+
         courses.add(course1);
         courses.add(course2);
         courses.add(course3);
 
         test1.registerStudent("50010","Ivan","Zornoza","3ro","Kinder",courses);
 
+        printed.printStudentWCourse(List <Student> test1, courses);
 
-        //TO PRINT
 
-        StudentAdministration printed = new StudentAdministration();
-        printed.printStudent();
+
 
 
     }

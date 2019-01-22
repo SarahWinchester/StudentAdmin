@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a63d4b8d-a7b1-4198-8b2b-efbb4158e824" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/teacherValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/ExtraData/Steps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/SchoolPersonal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/newAzExcercice/SchoolPersonal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/SchoolPersonalAdministration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/newAzExcercice/SchoolPersonalAdministration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/StudentAdministration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/Validation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/newAzExcercice/Validation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExtraData/Steps" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SchoolPersonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SchoolPersonal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SchoolPersonalAdministration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SchoolPersonalAdministration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StudentAdministration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentAdministration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +25,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/StudentAdministration.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="347">
-                  <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+                <state relative-caret-position="322">
+                  <caret line="138" column="51" selection-start-line="138" selection-start-column="51" selection-end-line="138" selection-end-column="51" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#329#330#0" expanded="true" />
@@ -183,8 +170,8 @@
         <option value="$PROJECT_DIR$/src/SchoolPersonalAdministration.java" />
         <option value="$PROJECT_DIR$/src/Validation.java" />
         <option value="$PROJECT_DIR$/src/Student.java" />
-        <option value="$PROJECT_DIR$/src/StudentAdministration.java" />
         <option value="$PROJECT_DIR$/src/Course.java" />
+        <option value="$PROJECT_DIR$/src/StudentAdministration.java" />
       </list>
     </option>
   </component>
@@ -222,7 +209,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548191137280" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548196323930" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -278,12 +265,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548037121897</updated>
       <workItem from="1548037125644" duration="20957000" />
-      <workItem from="1548101564289" duration="27462000" />
+      <workItem from="1548101564289" duration="29992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48419000" />
+    <option name="totallyTimeSpent" value="50949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -527,8 +514,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StudentAdministration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+        <state relative-caret-position="322">
+          <caret line="138" column="51" selection-start-line="138" selection-start-column="51" selection-end-line="138" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#329#330#0" expanded="true" />
