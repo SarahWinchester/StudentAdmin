@@ -18,26 +18,12 @@ public class StudentAdministration {
         test1.registerStudent("50006","Caithleen","Mayfair","1ro","Elementary");
         test1.registerStudent("50007","Jhin","Opera","2do","Elementary");
         test1.registerStudent("50008","Yasuo","Winter","2do","JrHighschool");
-        test1.registerStudent("50004","Camille","Strinds","1ro","JrHighschool");
+        test1.registerStudent("50009","Camille","Strinds","1ro","JrHighschool");
 
-        //****************PRINTED STUDENTS
+        //TO PRINT
 
-        System.out.println("Students in database: " + test1.getAddStudent().size());
-
-
-        for (int i =0 ; i < test1.getAddStudent().size(); i++){
-            System.out.println("\n********************************************");
-            System.out.println("\nSTUDENT DATA");
-
-
-            System.out.println("\nID: " + test1.getAddStudent().get(i).getId());
-            System.out.println("NAME: " + test1.getAddStudent().get(i).getName());
-            System.out.println("LASTNAME: " + test1.getAddStudent().get(i).getLastName());
-            System.out.println("LVL: " + test1.getAddStudent().get(i).getLvl());
-            System.out.println("STAGE: " + test1.getAddStudent().get(i).getStage());
-
-
-        }
+        /*StudentAdministration printed = new StudentAdministration();
+        printed.printStudent();*/
 
 
 
@@ -67,15 +53,36 @@ public class StudentAdministration {
         if(Validation.validationId(id) && Validation.validationStageLvl(stage, lvl)&& Validation.validationStage(stage)){
             Student stu1 = new Student(id, name, lastName,lvl, stage);
             addStudent.add(stu1);
+            System.out.println("Data added correctly");
 
         }else{
-            System.out.println("data is incorrect");
+            System.out.println("data is incorrect, Try again");
         }
 
 
 
+    }
+
+    public void printStudent(){
+        //****************PRINTED STUDENTS
+        StudentAdministration printStud = new StudentAdministration();
+
+        System.out.println("Students in database: " + printStud.getAddStudent().size());
 
 
+        for (int i =0 ; i < printStud.getAddStudent().size(); i++){
+            System.out.println("\n********************************************");
+            System.out.println("\nSTUDENT DATA");
+
+
+            System.out.println("\nID: " + printStud.getAddStudent().get(i).getId());
+            System.out.println("NAME: " + printStud.getAddStudent().get(i).getName());
+            System.out.println("LASTNAME: " + printStud.getAddStudent().get(i).getLastName());
+            System.out.println("LVL: " + printStud.getAddStudent().get(i).getLvl());
+            System.out.println("STAGE: " + printStud.getAddStudent().get(i).getStage());
+
+
+        }
     }
 
 
