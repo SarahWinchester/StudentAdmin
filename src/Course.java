@@ -1,25 +1,26 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Course {
 
-    private String course;
+    private String courseName;
     private float grade= -1;
+    //constructores
 
-    public Course(String course, float grade) {
-        this.course = course;
+    public Course(String courseName, float grade) {
+        this.courseName = courseName;
         this.grade = grade;
     }
+
 
     public Course() {
     }
 
-    public String getCourse() {
-        return course;
+    //Getters and setters
+
+    public String getCourseName() {
+        return courseName;
     }
 
-    public void setCourse(String course) {
-        this.course = course;
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
     }
 
     public float getGrade() {

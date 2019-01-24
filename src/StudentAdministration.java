@@ -59,7 +59,7 @@ public class StudentAdministration {
             System.out.println("Data added correctly");
 
         }else{
-            System.out.println("data is incorrect, Try again");
+            System.out.println("data  is incorrect, Try again");
         }
 
     }
@@ -71,14 +71,15 @@ public class StudentAdministration {
 
 
         for (int i = 0; i < studentList.size(); i++){
-            System.out.println("\n********************************************");
-            System.out.println("\nSTUDENT DATA");
+            System.out.println("\n*** *****************************************");
+            System.out.println("\nSTUDENT  DATA");
 
 
             System.out.println("\nID: " + studentList.get(i).getId());
-            System.out.println("NAME: " + studentList.get(i).getName());
-            System.out.println("LASTNAME: " + studentList.get(i).getLastName());
-            System.out.println("LVL: " + studentList.get(i).getLvl());
+            System.out.println( "NAME: " + studentList.get(i).getName());
+            System.out.println( "LASTNAME: " + studentList.get(i).getLastName());
+            System.out.println( "LVL: " + studentList.get(i).getLvl());
+            System.out.println("STAGE: " + studentList.get(i).getStage());
 
 
 
@@ -93,8 +94,28 @@ public class StudentAdministration {
     public void printStudentWCourse( ){
         // PRINT STUDENT WITH COURSE
 
-        for (int j = 0 ; j < courses.size(); j++){
-            System.out.println( "odcn" + studentL.get(j) + courses.get(j));
+        System.out.println("Students in database: " + studentList.size());
+        System.out.println(" Courses in data: " + courselist.size());
+
+
+
+        for (int i = 0 ; i <  studentList.size(); i++) {
+
+            for (int j = 0; j < StudentAdministration.courselist.size(); j++) {
+
+                System.out.println("\n*** *****************************************");
+                System.out.println("\nSTUDENT  DATA");
+
+                System.out.println("ID: " + studentList.get(i).getId());
+                System.out.println("NAME: " +  studentList.get(i).getName());
+                System.out.println("LASTNAME: " + studentList.get(i).getLastName());
+                System.out.println("LEVEL: " + studentList.get(i).getLvl());
+                System.out.println("STAGE: " + studentList.get(i).getStage());
+                System.out.println("MATERIA: " + courselist.get(j).getCourseName());
+
+
+
+            }
         }
     }
 
@@ -116,27 +137,38 @@ public class StudentAdministration {
         test1.registerStudent("50008","Yasuo","Winter","2do","JrHighschool");
         test1.registerStudent("50009","Camille","Strinds","1ro","JrHighschool");
 
-        //TO PRINT
-
-        StudentAdministration printed = new StudentAdministration();
-        printed.printStudent();
+       /* StudentAdministration printed = new StudentAdministration();
+        printed.printStudent();*/
 
 
 
-        //HARDCODED COURSES
-        Course course1 = new Course("Math",0);
-        Course course2 = new Course("Spanish",1);
-        Course course3 = new Course("Programming",2);
 
+
+
+
+
+
+      //HARDCODED COURSES
+
+        StudentAdministration test2 = new StudentAdministration();
         List<Course> courses = new ArrayList<Course>();
 
-        courses.add(course1);
-        courses.add(course2);
-        courses.add(course3);
+        StudentAdministration.courselist.size();
+        Course curso = new Course("Math ", -1);
+        courselist.add(curso);
+        Course curso2 = new Course("Spanish ", 9.8f);
+        courselist.add(curso2);
 
-        test1.registerStudent("50010","Ivan","Zornoza","3ro","Kinder",courses);
 
-        printed.printStudentWCourse(List <Student> test1, courses);
+
+        test2.registerStudent("50010","Ivan","Zornoza","3ro","Kinder", getCourselist());
+        System.out.println("estoy entrando" + StudentAdministration.courselist.size());
+
+
+        //trying to print
+
+        StudentAdministration printstud = new StudentAdministration();
+        printstud.printStudentWCourse();
 
 
 

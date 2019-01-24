@@ -2,7 +2,8 @@ public enum Stages {
 
     KINDER ("KINDER"),
     ELEMENTARY("ELEMENTARY"),
-    JRHIGHSCHOOL("JRHIGHSCHOOL");
+    JRHIGHSCHOOL("JRHIGHSCHOOL"),
+    GRADUATED("GRADUATED");
 
     private final String value;
 
