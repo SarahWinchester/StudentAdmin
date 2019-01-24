@@ -1,3 +1,5 @@
+package Old;
+
 public class Course {
 
     private String courseName;
@@ -42,23 +44,23 @@ public class Course {
 
     //adding
     public void newCourse(){
-        Course.addcourse.add(0,"math");
-        Course.addcourse.add(1,"spanish");
-        Course.addcourse.add(2,"Programing");
-        Course.addcourse.add(3,"Physics");
-        Course.addcourse.add(4,"Geography");
-        Course.addcourse.add(5, "French");
-        Course.addcourse.add(6,"Art");
-        Course.addcourse.add(7,"History");
+        Old.Course.addcourse.add(0,"math");
+        Old.Course.addcourse.add(1,"spanish");
+        Old.Course.addcourse.add(2,"Programing");
+        Old.Course.addcourse.add(3,"Physics");
+        Old.Course.addcourse.add(4,"Geography");
+        Old.Course.addcourse.add(5, "French");
+        Old.Course.addcourse.add(6,"Art");
+        Old.Course.addcourse.add(7,"History");
 
 
 
         System.out.println("\n********************************************");
         System.out.println("\nCOURSE DATA");
 
-        for (int i =0 ; i < Course.getAddcourse().size(); i++){
+        for (int i =0 ; i < Old.Course.getAddcourse().size(); i++){
 
-            System.out.println("\nCourse Avaible "+ (i)+ " " + Course.getAddcourse().get(i));
+            System.out.println("\nOld.Course Avaible "+ (i)+ " " + Old.Course.getAddcourse().get(i));
 
 
 

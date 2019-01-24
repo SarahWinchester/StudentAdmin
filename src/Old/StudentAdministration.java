@@ -1,3 +1,5 @@
+package Old;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -137,7 +139,7 @@ public class StudentAdministration {
         test1.registerStudent("50008","Yasuo","Winter","2do","JrHighschool");
         test1.registerStudent("50009","Camille","Strinds","1ro","JrHighschool");
 
-       /* StudentAdministration printed = new StudentAdministration();
+       /* Old.StudentAdministration printed = new Old.StudentAdministration();
         printed.printStudent();*/
 
 

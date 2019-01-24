@@ -1,3 +1,8 @@
+package Old;
+
+import Old.Stages;
+import Old.Student;
+
 public class teacherValidation {
 
 

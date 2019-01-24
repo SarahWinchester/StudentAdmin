@@ -1,3 +1,5 @@
+package Old;
+
 public enum Stages {
 
     KINDER ("KINDER"),

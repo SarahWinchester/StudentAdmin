@@ -1,3 +1,5 @@
+package Old;
+
 public class SchoolPersonal {
 
     // QUITAR ATRIBUTOS NO REQUERIDOS
