@@ -30,7 +30,7 @@ public class Estudiante {
     }
 
     public void setId(int id) {
-        if (id < 50000 || id > 59999){
+        if (id > 50000 || id < 59999){
             this.id = id;
         }else {
             this.id = 0;
@@ -49,8 +49,11 @@ public class Estudiante {
             case "primaria":
 
             case "secundaria":
-                this.nivel = nivel.toLowerCase();
+
+            case "graduado":
+                this.nivel=nivel.toLowerCase();
                 break;
+
             default:
                 this.nivel = "nivel";
                 break;
@@ -113,11 +116,11 @@ public class Estudiante {
         }
     }
 
-    public List getMaterias() {
+    public List <Materia> getMaterias() {
         return materias;
     }
 
-    public void setMaterias(List materias) {
+    public void setMaterias(List <Materia> materias) {
         this.materias = materias;
     }
 

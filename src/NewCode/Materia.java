@@ -2,7 +2,7 @@ package NewCode;
 
 public class Materia {
     private String nombreMateria;
-    private float calificacion = -1;
+    private float calificacion;
 
 
     public Materia() {
@@ -13,6 +13,8 @@ public class Materia {
     }
 
     public void setNombreMateria(String nombreMateria) {
+
+
         this.nombreMateria = nombreMateria;
     }
 
@@ -21,6 +23,7 @@ public class Materia {
     }
 
     public void setCalificacion(float calificacion) {
-        this.calificacion = calificacion;
+
+        this.calificacion = -1;
     }
 }
