@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a63d4b8d-a7b1-4198-8b2b-efbb4158e824" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NewCode/AdministracionEmpleados.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NewCode/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NewCode/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NewCode/Materia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/SchoolPersonal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/SchoolPersonalAdministration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/Stages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/StudentAdministration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/Validation$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/Validation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/teacherValidation$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/newAzExcercice/teacherValidation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExtraData/validations" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NewCode/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewCode/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NewCode/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewCode/Estudiante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Old/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Old/SchoolPersonal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Old/SchoolPersonalAdministration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Old/Stages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Old/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Old/StudentAdministration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Old/Validation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Old/teacherValidation.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,37 +31,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NewCode/Estudiante.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="525">
+              <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
-                <element signature="e#2416#2417#0" expanded="true" />
-                <element signature="e#2504#2505#0" expanded="true" />
+                <element signature="e#220#229#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#394#395#0" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#445#446#0" expanded="true" />
+                <element signature="e#815#816#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#1247#1248#0" expanded="true" />
+                <element signature="e#3035#3036#0" expanded="true" />
+                <element signature="e#3121#3122#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="64" selection-start-line="64" selection-end-line="65" />
+            <state relative-caret-position="528">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#159#171#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NewCode/Materia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="105">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding>
                 <element signature="e#181#182#0" expanded="true" />
                 <element signature="e#217#218#0" expanded="true" />
@@ -93,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NewCode/Empleado.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="751">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="e#188#189#0" expanded="true" />
                 <element signature="e#217#218#0" expanded="true" />
@@ -102,14 +99,10 @@
                 <element signature="e#297#298#0" expanded="true" />
                 <element signature="e#326#327#0" expanded="true" />
                 <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
+                <element signature="e#763#764#0" expanded="true" />
                 <element signature="e#589#590#0" expanded="true" />
                 <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#659#660#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,14 +150,16 @@
         <option value="$PROJECT_DIR$/src/NewCode/Student.java" />
         <option value="$PROJECT_DIR$/src/NewCode/Materias.java" />
         <option value="$PROJECT_DIR$/src/NewCode/Materia.java" />
+        <option value="$PROJECT_DIR$/src/old/Main.java" />
         <option value="$PROJECT_DIR$/src/NewCode/Empleado.java" />
         <option value="$PROJECT_DIR$/src/NewCode/Estudiante.java" />
         <option value="$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="1440" />
+    <option name="y" value="-180" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -184,13 +179,18 @@
             <path>
               <item name="newAzExcercice" type="b2602c69:ProjectViewProjectNode" />
               <item name="newAzExcercice" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newAzExcercice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newAzExcercice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="newAzExcercice" type="b2602c69:ProjectViewProjectNode" />
               <item name="newAzExcercice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Old" type="462c0819:PsiDirectoryNode" />
+              <item name="NewCode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,7 +202,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548704500988" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548728480199" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -281,18 +281,18 @@
       <option name="presentableId" value="Default" />
       <updated>1548037121897</updated>
       <workItem from="1548037125644" duration="20957000" />
-      <workItem from="1548101564289" duration="72391000" />
+      <workItem from="1548101564289" duration="84457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93348000" />
+    <option name="totallyTimeSpent" value="105414000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-180" width="1920" height="1080" extended-state="6" />
+    <frame x="1440" y="-180" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.020766772" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.118743345" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -302,14 +302,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.23465346" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23465346" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.13373494" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.13366337" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32871288" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297568" />
@@ -398,78 +398,6 @@
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="96" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="98" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/NewCode/Estudiante.java</url>
-          <line>119</line>
-          <properties />
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/NewCode/Estudiante.java</url>
-          <line>121</line>
-          <properties />
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/NewCode/Estudiante.java</url>
-          <line>122</line>
-          <properties />
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/NewCode/Estudiante.java</url>
-          <line>124</line>
-          <properties />
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/NewCode/Estudiante.java</url>
-          <line>125</line>
-          <properties />
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/NewCode/Estudiante.java</url>
-          <line>123</line>
-          <properties />
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/NewCode/Estudiante.java</url>
-          <line>120</line>
-          <properties />
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/NewCode/Estudiante.java</url>
-          <line>126</line>
-          <properties />
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/NewCode/Estudiante.java</url>
-          <line>127</line>
-          <properties />
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Old/SchoolPersonalAdministration.java</url>
           <line>30</line>
@@ -493,30 +421,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java</url>
-          <line>21</line>
-          <properties class="NewCode.AdministracionAlumnos" method="altaAlumno">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java</url>
-          <line>74</line>
-          <properties class="NewCode.AdministracionAlumnos" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java</url>
-          <line>42</line>
-          <properties class="NewCode.AdministracionAlumnos" method="getIndexAlumnoFromList">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -712,50 +616,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NewCode/Materia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NewCode/AdministracionEmpleados.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NewCode/Empleado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,34 +643,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java">
+    <entry file="file://$PROJECT_DIR$/src/NewCode/Empleado.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" selection-start-line="64" selection-end-line="65" />
+        <state relative-caret-position="751">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/old/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewCode/Materia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NewCode/Estudiante.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="525">
+          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#2416#2417#0" expanded="true" />
-            <element signature="e#2504#2505#0" expanded="true" />
+            <element signature="e#220#229#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#3035#3036#0" expanded="true" />
+            <element signature="e#3121#3122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#159#171#0" expanded="true" />
           </folding>
         </state>
       </provider>

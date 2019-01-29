@@ -5,87 +5,56 @@ import java.util.List;
 
 public class AdministracionAlumnos {
 
-    private List <Estudiante> alumnos = new ArrayList();
+    private List<Estudiante> alumnos= new ArrayList<Estudiante>();
 
-    public AdministracionAlumnos() {
+    public boolean altaAlumno(String nombre, int id,  String nivel,String grado){
+
+        Estudiante stud = new Estudiante(nombre,id,nivel,grado);
+
+        if (stud.getId() == 0 ||stud.getNivel() == "nivel" ||  stud.getGrado() == "grado"){
+
+            System.out.println("Alumno no pudo ser dado de alta favor de verificar datos");
+            return false;
+        }
+        for (Estudiante alumno : alumnos) {
+
+            if(alumno.getId() == stud.getId()){
+                System.out.println("el Id " +id + " dado ya se encuentra dado de alta " );
+                return false;
+            }
+        }
+        alumnos.add(stud);
+        System.out.println("Alumno dado de alta exitosamente");
+        return true;
 
     }
+    public  boolean altaAlumno(String nombre, int id, String grado, String nivel, List<Materia> materias){
 
-    public List getAlumnos() {
-        return alumnos;
-    }
-
-    public void setAlumnos(List alumnos) {
-        this.alumnos = alumnos;
-    }
-
-    public boolean altaAlumno ( String nombre, String id, String grado, String nivel){
-
-        if (getIndexAlumnoFromList(id)== false){
-            System.out.println("El id " + id +  " ya existe , por favor revisa de nuevo, el estudiante no fue agregado");
+       int checkind;
+       boolean checkstud =altaAlumno(nombre,id,grado,nivel);
+       checkind=getIndexAlumnoFromList(id);
 
 
+        if( checkstud == true && checkind != -1){
+            alumnos.get(checkind).setMaterias(materias);
+
+            return true;
         }else {
-
-            Estudiante stud = new Estudiante(nombre, id, grado, nivel);
-            alumnos.add(stud);
-            System.out.println("Data gregada correctamente");
-        }
-
-
-
-
-    return true;
-
-
-    }
-
-    public boolean getIndexAlumnoFromList(String id){
-
-        //Estudiante _id = new Estudiante();
-
-
-       for(int i = 0 ; i < getAlumnos().size(); i++  ){
-
-           if(getAlumnos().equals(id)){
-               return false;
-           }
-
-
-       }               return true;
-
-    }
-
-    public  void imprimirAlumnos(){
-        //****************PRINTED STUDENTS
-
-        System.out.println("Students in database: " + getAlumnos().size());
-
-        for (int i = 0; i < getAlumnos().size() ; i++) {
-            System.out.println("***************************");
-            System.out.println("\nStudent data");
-
-            System.out.println("\n ID: " +getAlumnos().get(i));
+            System.out.println("no se agregaron materias al alumno seleccionado");
+            return false;
 
         }
-
-
     }
 
-    public static void main(String[] args) {
+    public int getIndexAlumnoFromList(int id){
 
-        AdministracionAlumnos alta = new AdministracionAlumnos();
+        for (int i = 0; i < alumnos.size() ; i++) {
+            if(alumnos.get(i).getId() == id){
+                return i;
+            }
 
-        alta.getAlumnos().size();
-
-        alta.altaAlumno( "Sarah Wuiz", "50000", "3ro","Kinder");
-        alta.altaAlumno( "Sarah Ruiz", "50001", "3ro","Kinder");
-
-
-        System.out.println( "cuantos alumnos hay " + alta.getAlumnos().size());
-
-        AdministracionAlumnos printed = new AdministracionAlumnos();
-        printed.imprimirAlumnos();
-
+        }
+        return -1;
     }
+
 }

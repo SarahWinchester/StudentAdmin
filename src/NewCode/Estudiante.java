@@ -5,21 +5,16 @@ import java.util.List;
 
 public class Estudiante {
     private String nombre;
-    private String id = "0";
+    private int id ;
     private String grado;
-    private List materias = new ArrayList();
-    private String nivel = "nivel";
+    private List <Materia> materias= new ArrayList<Materia>();
+    private String nivel;
 
-    public Estudiante() {
-
-    }
-
-    public Estudiante(String nombre, String id, String grado, String nivel) {
+    public Estudiante(String nombre, int id, String nivel,  String grado) {
         setNombre(nombre);
         setId(id);
-        setGrado(grado);
         setNivel(nivel);
-
+        setGrado(grado);
     }
 
     public String getNombre() {
@@ -30,104 +25,100 @@ public class Estudiante {
         this.nombre = nombre;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-
-    public void setId(String id) {
-        this.id = id;
-
-        if (!(getId() == null || getId().isEmpty()) && ("5".equalsIgnoreCase(getId().substring(0, 1)) && (getId().length() == 5))) {
-
-
-
-        }else{
-            setId("0");
-            System.out.println("escribe correctamente el Id, debe empezar con 5 y tener 5 digitos ");
+    public void setId(int id) {
+        if (id < 50000 || id > 59999){
+            this.id = id;
+        }else {
+            this.id = 0;
         }
     }
 
+    public String getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(String nivel) {
+
+        switch (nivel.toLowerCase()){
+            case "kinder":
+
+            case "primaria":
+
+            case "secundaria":
+                this.nivel = nivel.toLowerCase();
+                break;
+            default:
+                this.nivel = "nivel";
+                break;
+
+        }
+
+    }
 
     public String getGrado() {
-
-        return  grado;
+        return grado;
     }
-
-
 
     public void setGrado(String grado) {
-        this.grado = grado;
-        switch (getNivel().toUpperCase()){
-
-            case "KINDER":
-                if(getNivel() == "1ro" || getGrado()== "2do" || getGrado() == "3ro" ){
-
+        switch (grado.toLowerCase()){
+            case "1ro":
+                if(getNivel()== "kinder" || getNivel() == "primaria" || getNivel() == "secundaria"){
+                    this.grado = grado.toLowerCase();
                 }else{
-                    System.out.println("Selecciona un grado valido para kinder ");
+                    this.grado = "grado";
                 }
                 break;
-
-            case "PRIMARIA" :
-                if(getGrado()=="1ro" ||getGrado() == "2do" || getGrado() == "3ro" || getGrado() == "4to" || getGrado() =="5to" || getGrado() == "6to"){
+            case "2do":
+                if(getNivel()== "kinder" || getNivel() == "primaria" || getNivel() == "secundaria"){
+                    this.grado = grado.toLowerCase();
                 }else{
-                    System.out.println("Selecciona un grado valido para primaria ");
+                    this.grado = "grado";
                 }
                 break;
-
-            case "SECUNDARIA":
-                if(getGrado() == "1ro"|| getGrado() == "2do" || getGrado() == "3ro"){
+            case "3ro":
+                if(getNivel()== "kinder" || getNivel() == "primaria" || getNivel() == "secundaria"){
+                    this.grado = grado.toLowerCase();
                 }else{
-                    System.out.println("selecciona un grado valido de secundaria ");
+                    this.grado = "grado";
                 }
                 break;
-            case "GRADUADO":
-                if(getGrado() == "3ro" && getNivel() == " secundaria"){
-
+            case "4to":
+                if(getNivel() == "primaria" ){
+                    this.grado = grado.toLowerCase();
                 }else{
-                    System.out.println("Selecciona un grado valido para poder  promover a graduado");
+                    this.grado = "grado";
                 }
                 break;
-
-
+            case "5to":
+                if(getNivel() == "primaria" ){
+                    this.grado = grado.toLowerCase();
+                }else{
+                    this.grado = "grado";
+                }
+                break;
+            case "6to":
+                if(getNivel() == "primaria"){
+                    this.grado = grado.toLowerCase();
+                }else{
+                    this.grado = "grado";
+                }
+                break;
+            default:
+                this.grado= "grado";
+                break;
         }
-
-
     }
-
-
 
     public List getMaterias() {
         return materias;
     }
 
-
-
     public void setMaterias(List materias) {
         this.materias = materias;
-    }
-
-
-
-    public String getNivel() {
-
-        return nivel;
-
-    }
-
-    public void setNivel(String nivel) {
-        this.nivel = nivel;
-            if(getNivel() == null || getNivel().isEmpty()){
-                switch ( getNivel().toUpperCase()){
-                    case "KINDER":
-                    case "PRIMARIA":
-                    case "SECUNDARIA":
-                    case "GRADUADO":
-                    default:
-                        setNivel("nivel");
-                        break;
-                }
-            }
     }
 
 }
