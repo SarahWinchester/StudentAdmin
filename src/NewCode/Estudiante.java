@@ -7,7 +7,7 @@ public class Estudiante {
     private String nombre;
     private int id ;
     private String grado;
-    private List <Materia> materias= new ArrayList<Materia>();
+    private List <Materia> materias= new ArrayList<>();
     private String nivel;
 
     public Estudiante(String nombre, int id, String nivel,  String grado) {
