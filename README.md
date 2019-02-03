@@ -63,7 +63,7 @@
 
 - tendremos una variable de instancia con todo el personal así List <Empleado> empleados= new ArrayList<Empleado>();
 
--[ ] **altaEmpleado -**> Recibe todos los datos y` validar `q sea correcta la creación son el setters  y q el id no sea repetido como en el caso de los alumnos,` si el empleado a agregar no es maestro el campo grupo tiene q ser NA.`
+-[x] **altaEmpleado -**> Recibe todos los datos y` validar `q sea correcta la creación son el setters  y q el id no sea repetido como en el caso de los alumnos,` si el empleado a agregar no es maestro el campo grupo tiene q ser NA.`
 
 -[ ] **asignarPuesto** -> Recibe el id del empleado y el nuevo puesto a asignar, `validar` si cambia de maestro a otro tipo q desasignemos el grupo y si es a director q no tengamos uno ya existente en la lista de empleados, también` validar `q el puesto q estamos recibiendo sea un string valido, así como el q id del empleado exista en la lista.
 

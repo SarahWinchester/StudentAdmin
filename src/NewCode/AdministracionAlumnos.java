@@ -63,9 +63,8 @@ public class AdministracionAlumnos {
                 if(alumnos.get(checkindex).getMaterias().get(i).getNombreMateria() == materia){
                     alumnos.get(checkindex).getMaterias().get(i).setCalificacion(calificacion);
                     System.out.println("Calificacion agregada a la materia " + materia);
-                }else{
-                    System.out.println("no se pudo XD");
                 }
+
 
             }
         }
@@ -85,14 +84,19 @@ public class AdministracionAlumnos {
             if(alumnos.get(checkindex).getGrado() == "3ro" && alumnos.get(checkindex).getNivel() == "kinder" ){
                 alumnos.get(checkindex).setGrado("1ro");
                 alumnos.get(checkindex).setNivel("primaria");
+                System.out.println("Alumno promovido");
 
             }else if (alumnos.get(checkindex).getGrado() == "3ro" && alumnos.get(checkindex).getNivel() == "secundaria"){
                 alumnos.get(checkindex).setGrado("-");
                 alumnos.get(checkindex).setNivel("graduado");
+                System.out.println("Alumno promovido");
+
 
             }else if(alumnos.get(checkindex).getGrado() == "6to" && alumnos.get(checkindex).getNivel() =="primaria"){
                 alumnos.get(checkindex).setGrado("1ro");
                 alumnos.get(checkindex).setNivel("secundaria");
+                System.out.println("Alumno promovido");
+
 
             }else{
                 System.out.println("\nEl nivel y el grado dado, no pueden ser promovidos, intentalo con otro alumno");
@@ -102,14 +106,14 @@ public class AdministracionAlumnos {
 
     public void imprimirAlumnos (){
 
-        System.out.println("Estudiantes en lista: " + alumnos.size());
+        System.out.println("\nEstudiantes en lista: " + alumnos.size());
 
         for (int i = 0; i < alumnos.size() ; i++) {
             System.out.println("\n***************************");
             System.out.println("Estudiante numero "  + (i+1));
 
             System.out.println("\nId: " + alumnos.get(i).getId());
-            System.out.println("Name: " + alumnos.get(i).getNombre());
+            System.out.println("Nombre: " + alumnos.get(i).getNombre());
             System.out.println("Grado: " + alumnos.get(i).getGrado());
             System.out.println("Nivel: " + alumnos.get(i).getNivel());
 
@@ -209,22 +213,22 @@ public class AdministracionAlumnos {
         List <Materia> list2= new ArrayList<>();
         List <Materia> list3= new ArrayList<>();
 
+        // DAR DE ALTA 8 ALUMNOS CON SUS DATOS COMPLETOS, 3 materias cada uno,  y 3 grupos diferentes
+
         //3 kinder
-        admin.altaAlumno("Sarah", 50000, "kinder", "3ro" );
-        admin.altaAlumno("Minerva", 50001, "kinder", "1ro");
-        admin.altaAlumno("Camille", 50002,"kinder", "2do");
+        admin.altaAlumno("Sarah", 50000, "kinder", "3ro" , list1);
+        admin.altaAlumno("Minerva", 50001, "kinder", "1ro", list2);
+        admin.altaAlumno("Camille", 50002,"kinder", "2do", list3);
         //3 primaria
-        admin.altaAlumno("Nimue", 50003, "primaria", "4to");
-        admin.altaAlumno("Rick", 50004, "primaria", "3ro");
-        admin.altaAlumno("Esteban", 50005, "primaria", "6to");
+        admin.altaAlumno("Nimue", 50003, "primaria", "4to", list1);
+        admin.altaAlumno("Rick", 50004, "primaria", "3ro", list2);
+        admin.altaAlumno("Esteban", 50005, "primaria", "6to", list3);
         //3 secundaria
-        admin.altaAlumno("Diane", 50006, "secundaria", "1ro");
+        admin.altaAlumno("Diane", 50006, "secundaria", "1ro", list1);
         admin.altaAlumno("Moira", 50007, "secundaria", "2do");
         admin.altaAlumno("suzan", 50008, "secundaria", "3ro");
 
-        //alta alumno sobrecarga
 
-        admin.altaAlumno("Prueba", 50030, "primaria", "3ro", list3);
 
         //CREANDO MATERIAS y agregandolas a la lista correspondiente
         Materia matematicas = new Materia();
@@ -264,9 +268,29 @@ public class AdministracionAlumnos {
 
         //*******************LLAMANDO METODOS***********
 
+        //Dando de alta alumno con id repetida
+        //admin.altaAlumno("Prueba", 50001, "primaria", "3ro", list3);
+
+
+        //CALIFICAR MATERIA POR ID
+        //admin.calificarMateria(50001, "Español", 9.5f);
+
+        //PROMOVER ALUMNO EN ESPECIFICO
+
+        //admin.promoverDeNivel(50000);
+
         // IMPRIMIR ALUMNOS
 
-        // admin.imprimirAlumnos();
+         //admin.imprimirAlumnos();
+
+        // IMPRIMIENDO ALUMNOS DE GRADO Y NIVEL
+
+        //admin.reporteAlumnoPorGrupo("3ro", "primaria");
+        //admin.reporteAlumnoPorGrupo("1ro", "kinder");
+
+        //IMPRIMIENDO DATOS DE ALUMNO EN ESPECIFICO
+        //admin.reporteAlumnoXId(50030);
+        //admin.reporteAlumnoXId(50006);
 
         // AGREGANDO MATERIAS A TODOS LOS ESTUDIANTES
 
@@ -276,23 +300,14 @@ public class AdministracionAlumnos {
 
         // admin.fillMaterias(50000,list2);
 
-        // IMPRIMIENDO ALUMNOS DE GRADO Y NIVEL
-
-        //admin.reporteAlumnoPorGrupo("3ro", "primaria");
-        //admin.reporteAlumnoPorGrupo("1ro", "kinder");
 
 
 
-        //CALIFICAR MATERIA
-        //admin.calificarMateria(50030, "Programacion", 9.5f);
 
-        //PROMOVER ALUMNO EN ESPECIFICO
 
-        //admin.promoverDeNivel(60006);
 
-        //IMPRIMIENDO DATOS DE ALUMNO EN ESPECIFICO
-        //admin.reporteAlumnoXId(50030);
-        //admin.reporteAlumnoXId(50006);
+
+
 
 
 

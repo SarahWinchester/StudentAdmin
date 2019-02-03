@@ -30,7 +30,7 @@ public class Estudiante {
     }
 
     public void setId(int id) {
-        if (id > 50000 || id < 59999){
+        if (id >= 50000 && id <= 59999){
             this.id = id;
         }else {
             this.id = 0;
