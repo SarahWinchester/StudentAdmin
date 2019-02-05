@@ -93,29 +93,29 @@
 
 - [x] Calificar las materias de los alumnos dados de alta
 
-- [ ] Promover un par de ellos
+- [x] Promover un par de ellos
 
-- [ ] Intentar promover un par y recibir mensaje de "No se puede promover, alumno debe de estar en el último grado del nivel"
+- [x] Intentar promover un par y recibir mensaje de "No se puede promover, alumno debe de estar en el último grado del nivel"
 
 - [x] correr el reporte de los alumnos de dos grupos
 
-- [ ] correr el reporte de los datos de 3 alumnos
+- [x] correr el reporte de los datos de 3 alumnos
 
 
 ####En el main de la clase AdministracionEmpleados
 
 
--[ ] dar de alta 8 empleados con sus datos completos para poder probar la aplicación dos maestros por nivel, el director y un administrativo
+- [x] dar de alta 8 empleados con sus datos completos para poder probar la aplicación dos maestros por nivel, el director y un administrativo
 
--[ ] asignar el grupo a los maestros
+- [x] asignar el grupo a los maestros
 
--[ ] cambiar el puesto de un maestro a administrativo
+- [x] cambiar el puesto de un maestro a administrativo
 
--[ ] cambiar el puesto de un maestro a director, con o sin uno previo
+- [x] cambiar el puesto de un maestro a director, con o sin uno previo
 
--[ ] dar de baja a dos empleados
+- [x] dar de baja a dos empleados
 
--[ ] correr los 3 reportes
+- [ ] correr los 3 reportes
 
 
 

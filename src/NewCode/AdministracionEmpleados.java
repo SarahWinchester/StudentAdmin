@@ -155,9 +155,7 @@ public class AdministracionEmpleados {
               System.out.println("Puesto: " + empleados.get(i).getPuesto());
               System.out.println("Grupo: " + empleados.get(i).getGrupo());
           }
-
       }
-
   }
 
 
@@ -193,6 +191,8 @@ public class AdministracionEmpleados {
         schoolPersonal.altaEmpleado("Mariana", 10009, "maestro", "3roSecundaria");
 
         schoolPersonal.altaEmpleado("Luxanna", 10000, "director", "-");
+        //schoolPersonal.altaEmpleado("Luxanna", 10000, "Administrativo", "-");
+
 
         schoolPersonal.altaEmpleado("Mariana", 10010, "Administrativo", "-");
         // IMP
@@ -202,18 +202,21 @@ public class AdministracionEmpleados {
         //ASIGNAR PUESTO
 
        // schoolPersonal.asignarPuesto(10009, "director" );
-
+        //schoolPersonal.asignarPuesto(10007, "Administrativo" );
 
         //ASIGNAR GRUPO
 
         //schoolPersonal.asignarGrupo(10001, "2doKinder");
+        //schoolPersonal.asignarGrupo(10005, "6toPrimaria");
 
         // DESASIGNAR GRUPO
         //schoolPersonal.desasignarGrupo(10001);
 
         //BAJA EMPLEADO
-
+        //schoolPersonal.desasignarGrupo(10008);
         //schoolPersonal.bajaEmpleado(10000);
+        //schoolPersonal.bajaEmpleado(10008);
+
 
         //IMPRIMIR EMPLEADOS
 
@@ -225,7 +228,7 @@ public class AdministracionEmpleados {
 
         // IMPRIMIR MAESTROS POR GRUPO
 
-        schoolPersonal.reporteMaestrosNivel("3roSecundaria");
+        //schoolPersonal.reporteMaestrosNivel("3roSecundaria");
 
 
 

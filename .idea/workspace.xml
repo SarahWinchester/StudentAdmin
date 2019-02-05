@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a63d4b8d-a7b1-4198-8b2b-efbb4158e824" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NewCode/AdministracionEmpleados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewCode/AdministracionEmpleados.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,17 +42,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NewCode/AdministracionEmpleados.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="192" column="62" selection-start-line="192" selection-start-column="62" selection-end-line="192" selection-end-column="62" />
+            <state relative-caret-position="244">
+              <caret line="204" column="59" selection-start-line="204" selection-start-column="59" selection-end-line="204" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#106#116#0" expanded="true" />
                 <element signature="method#altaEmpleado#0;class#AdministracionEmpleados#0" />
-                <element signature="method#asignarPuesto#0;class#AdministracionEmpleados#0" />
                 <element signature="method#asignarGrupo#0;class#AdministracionEmpleados#0" />
                 <element signature="method#desasignarGrupo#0;class#AdministracionEmpleados#0" />
                 <element signature="method#bajaEmpleado#0;class#AdministracionEmpleados#0" />
                 <element signature="method#imprimirReporteEmpleados#0;class#AdministracionEmpleados#0" />
+                <element signature="method#reporteMaestrosNivel#0;class#AdministracionEmpleados#0" />
+                <element signature="method#getIndexEmpleadoFromList#0;class#AdministracionEmpleados#0" />
               </folding>
             </state>
           </provider>
@@ -60,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1840">
+            <state relative-caret-position="2460">
               <caret line="234" column="27" selection-start-line="234" selection-start-column="27" selection-end-line="234" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,6 +72,18 @@
                 <element signature="method#fillMaterias#0;class#AdministracionAlumnos#0" />
                 <element signature="method#fillMaterias#1;class#AdministracionAlumnos#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="402">
+                <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -119,8 +133,8 @@
         <option value="$PROJECT_DIR$/src/NewCode/Materia.java" />
         <option value="$PROJECT_DIR$/src/NewCode/Estudiante.java" />
         <option value="$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/NewCode/Empleado.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/NewCode/AdministracionEmpleados.java" />
       </list>
     </option>
@@ -170,7 +184,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549391470316" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549391753046" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -264,18 +278,18 @@
       <updated>1548037121897</updated>
       <workItem from="1548037125644" duration="20957000" />
       <workItem from="1548101564289" duration="91633000" />
-      <workItem from="1548783729598" duration="66936000" />
+      <workItem from="1548783729598" duration="67203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179526000" />
+    <option name="totallyTimeSpent" value="179793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-180" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16066483" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16027689" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -285,7 +299,7 @@
       <window_info anchor="bottom" id="Duplicate detector" weight="0.32953367" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27227724" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27227724" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.19702971" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -293,7 +307,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.27029702" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.31782177" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31782177" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32673267" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -552,16 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -588,9 +592,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="402">
+            <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/NewCode/AdministracionAlumnos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
+        <state relative-caret-position="2460">
           <caret line="234" column="27" selection-start-line="234" selection-start-column="27" selection-end-line="234" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -605,17 +619,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NewCode/AdministracionEmpleados.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="192" column="62" selection-start-line="192" selection-start-column="62" selection-end-line="192" selection-end-column="62" />
+        <state relative-caret-position="244">
+          <caret line="204" column="59" selection-start-line="204" selection-start-column="59" selection-end-line="204" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#106#116#0" expanded="true" />
             <element signature="method#altaEmpleado#0;class#AdministracionEmpleados#0" />
-            <element signature="method#asignarPuesto#0;class#AdministracionEmpleados#0" />
             <element signature="method#asignarGrupo#0;class#AdministracionEmpleados#0" />
             <element signature="method#desasignarGrupo#0;class#AdministracionEmpleados#0" />
             <element signature="method#bajaEmpleado#0;class#AdministracionEmpleados#0" />
             <element signature="method#imprimirReporteEmpleados#0;class#AdministracionEmpleados#0" />
+            <element signature="method#reporteMaestrosNivel#0;class#AdministracionEmpleados#0" />
+            <element signature="method#getIndexEmpleadoFromList#0;class#AdministracionEmpleados#0" />
           </folding>
         </state>
       </provider>
