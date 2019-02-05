@@ -43,8 +43,12 @@ public class Empleado {
 
         switch (puesto.toLowerCase()){
             case "maestro":
+                this.puesto = puesto.toLowerCase();
+                break;
 
             case "director":
+                this.puesto = puesto.toLowerCase();
+                break;
 
             case "administrativo":
                 this.puesto = puesto.toLowerCase();

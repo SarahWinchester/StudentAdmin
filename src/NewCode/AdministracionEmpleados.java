@@ -28,35 +28,32 @@ public class AdministracionEmpleados {
 
   private void asignarPuesto ( int id, String puesto){
 
-
      int checkEmpId;
      checkEmpId= getIndexEmpleadoFromList(id);
 
      if( checkEmpId == -1){
          System.out.println("El ID buscado no se encuentra disponible");
      }else{
-
+         boolean isThereADirectorAlreadyflag = false;
          if(puesto.toLowerCase() == "director"){
              for (int i = 0; i <empleados.size() ; i++){
                  if(empleados.get(i).getPuesto().toLowerCase() == "director"){
                      System.out.println("El puesto se encuentra ocupado");
+                     isThereADirectorAlreadyflag = true;
+                     break;
                  }
-
              }
-         }else{
+         }
+         if(puesto.toLowerCase() != "director" || (isThereADirectorAlreadyflag == false && puesto.toLowerCase() == "director")){
              empleados.get(checkEmpId).setPuesto(puesto);
              System.out.println("\n*************************");
              System.out.println("\n Nombre: " + empleados.get(checkEmpId).getNombre());
              System.out.println("ID: " + empleados.get(checkEmpId).getId());
              System.out.println("Puesto: " + empleados.get(checkEmpId).getPuesto());
              System.out.println("Grupo: " + empleados.get(checkEmpId).getGrupo());
-
          }
-
-
      }
   }
-
 
 
   private void asignarGrupo(int id, String grupo){
@@ -65,7 +62,7 @@ public class AdministracionEmpleados {
 
       if ( checkEmpId == -1){
           System.out.println(" El Id del empleado dado no existe, favor de verificarlo");
-      }else if( empleados.get(checkEmpId).getPuesto() != "Maestro"){
+      }else if( empleados.get(checkEmpId).getPuesto().toLowerCase() != "maestro"){
           System.out.println("El empleado no es maestro, no puede asignarsele un grupo ");
       }else{
           empleados.get(checkEmpId).setPuesto(grupo);
@@ -81,7 +78,7 @@ public class AdministracionEmpleados {
          System.out.println("El empleado no  existe ");
 
      }else{
-         if(empleados.get(checkEmpId).getGrupo() == "maestro"){
+         if(empleados.get(checkEmpId).getPuesto() != "maestro"){
              empleados.get(checkEmpId).setGrupo("grupo");
          }else{
              System.out.println("El empleado no puede ser asignado, revisa que seaun maestro");
@@ -199,9 +196,9 @@ public class AdministracionEmpleados {
 
         schoolPersonal.altaEmpleado("Ada", 10007, "Maestro", "1roSecundaria");
         schoolPersonal.altaEmpleado("Cassandra", 10008, "Maestro", "2doSecundaria");
-        schoolPersonal.altaEmpleado("Mariana", 10009, "Maestro", "3roSecundaria");
+        schoolPersonal.altaEmpleado("Mariana", 10009, "Administrativo", "3roSecundaria");
 
-        schoolPersonal.altaEmpleado("Luxanna", 10000, "Director", "-");
+        schoolPersonal.altaEmpleado("Luxanna", 10000, "director", "-");
 
         schoolPersonal.altaEmpleado("Mariana", 10010, "Administrativo", "-");
         // IMP
@@ -210,11 +207,12 @@ public class AdministracionEmpleados {
 
         //ASIGNAR PUESTO
 
-        schoolPersonal.asignarPuesto(10009, "director" );
+       // schoolPersonal.asignarPuesto(10009, "director" );
+
 
         //ASIGNAR GRUPO
 
-        //schoolPersonal.asignarGrupo(10001, "1roKinder");
+        schoolPersonal.asignarGrupo(10001, "1roKinder");
 
 
 
