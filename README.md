@@ -65,19 +65,19 @@
 
 -[x] **altaEmpleado -**> Recibe todos los datos y` validar `q sea correcta la creación son el setters  y q el id no sea repetido como en el caso de los alumnos,` si el empleado a agregar no es maestro el campo grupo tiene q ser NA.`
 
--[ ] **asignarPuesto** -> Recibe el id del empleado y el nuevo puesto a asignar, `validar` si cambia de maestro a otro tipo q desasignemos el grupo y si es a director q no tengamos uno ya existente en la lista de empleados, también` validar `q el puesto q estamos recibiendo sea un string valido, así como el q id del empleado exista en la lista.
+-[x] **asignarPuesto** -> Recibe el id del empleado y el nuevo puesto a asignar, `validar` si cambia de maestro a otro tipo q desasignemos el grupo y si es a director q no tengamos uno ya existente en la lista de empleados, también` validar `q el puesto q estamos recibiendo sea un string valido, así como el q id del empleado exista en la lista.
 
--[ ] **asignarGrupo** -> Recibe el id del empleado y el grupo a asignar, `validar` q sea maestro para poder asignar, así como el q id del empleado exista en la lista.
+-[x] **asignarGrupo** -> Recibe el id del empleado y el grupo a asignar, `validar` q sea maestro para poder asignar, así como el q id del empleado exista en la lista.
 
--[ ] **desasignarGrupo** -> Recibe el id del empleado,` validar` q sea maestro para poder desasignar, así como el q id del empleado exista en la lista.
+-[x] **desasignarGrupo** -> Recibe el id del empleado,` validar` q sea maestro para poder desasignar, así como el q id del empleado exista en la lista.
 
--[ ] **bajaEmpleado** -> Recibe el id del empleado, `validar` q si es maestro no tenga grupo asignado, así como el q id del empleado exista en la lista.
+-[x] **bajaEmpleado** -> Recibe el id del empleado, `validar` q si es maestro no tenga grupo asignado, así como el q id del empleado exista en la lista.
 
--[ ] **reporteEmpleados** -> imprimir todos los empleados y sus datos correspondientes
+-[x] **reporteEmpleados** -> imprimir todos los empleados y sus datos correspondientes
 
--[ ] **reporteEmpleadosPuesto** -> imprimir todos los empleados de un puesto dado y sus datos correspondientes
+-[x] **reporteEmpleadosPuesto** -> imprimir todos los empleados de un puesto dado y sus datos correspondientes
 
--[ ] **reporteMaestrosNivel** -> imprimir todos los maestros de cierto nivel dado datos correspondientes
+-[x] **reporteMaestrosNivel** -> imprimir todos los maestros de cierto nivel dado datos correspondientes
 
 #####Así como en la clase de alumnos también tenemos una utilidad
 
@@ -106,11 +106,17 @@
 
 
 -[ ] dar de alta 8 empleados con sus datos completos para poder probar la aplicación dos maestros por nivel, el director y un administrativo
+
 -[ ] asignar el grupo a los maestros
+
 -[ ] cambiar el puesto de un maestro a administrativo
+
 -[ ] cambiar el puesto de un maestro a director, con o sin uno previo
+
 -[ ] dar de baja a dos empleados
+
 -[ ] correr los 3 reportes
+
 
 
 Notas: - **todas** las variables de instancia van encapsuladas

@@ -32,13 +32,14 @@ public class AdministracionEmpleados {
      checkEmpId= getIndexEmpleadoFromList(id);
 
      if( checkEmpId == -1){
-         System.out.println("El ID buscado no se encuentra disponible");
+         System.out.println("\nEl ID buscado no se encuentra disponible");
      }else{
          boolean isThereADirectorAlreadyflag = false;
          if(puesto.toLowerCase() == "director"){
              for (int i = 0; i <empleados.size() ; i++){
                  if(empleados.get(i).getPuesto().toLowerCase() == "director"){
-                     System.out.println("El puesto se encuentra ocupado");
+                     System.out.println("\n****************************");
+                     System.out.println("\nEl puesto se encuentra ocupado");
                      isThereADirectorAlreadyflag = true;
                      break;
                  }
@@ -47,7 +48,7 @@ public class AdministracionEmpleados {
          if(puesto.toLowerCase() != "director" || (isThereADirectorAlreadyflag == false && puesto.toLowerCase() == "director")){
              empleados.get(checkEmpId).setPuesto(puesto);
              System.out.println("\n*************************");
-             System.out.println("\n Nombre: " + empleados.get(checkEmpId).getNombre());
+             System.out.println("\nNombre: " + empleados.get(checkEmpId).getNombre());
              System.out.println("ID: " + empleados.get(checkEmpId).getId());
              System.out.println("Puesto: " + empleados.get(checkEmpId).getPuesto());
              System.out.println("Grupo: " + empleados.get(checkEmpId).getGrupo());
@@ -60,13 +61,18 @@ public class AdministracionEmpleados {
       int checkEmpId;
       checkEmpId = getIndexEmpleadoFromList(id);
 
-      if ( checkEmpId == -1){
-          System.out.println(" El Id del empleado dado no existe, favor de verificarlo");
-      }else if( empleados.get(checkEmpId).getPuesto().toLowerCase() != "maestro"){
-          System.out.println("El empleado no es maestro, no puede asignarsele un grupo ");
+      if(checkEmpId == -1){
+          System.out.println("\nEl id del empleado dado no existe, favor de verificar ");
+      }else if( empleados.get(checkEmpId).getPuesto().equalsIgnoreCase("maestro")){
+          empleados.get(checkEmpId).setGrupo(grupo);
+          System.out.println("\n*************************");
+          System.out.println("\n Nombre: " + empleados.get(checkEmpId).getNombre());
+          System.out.println("ID: " + empleados.get(checkEmpId).getId());
+          System.out.println("Puesto: " + empleados.get(checkEmpId).getPuesto());
+          System.out.println("Grupo: " + empleados.get(checkEmpId).getGrupo());
       }else{
-          empleados.get(checkEmpId).setPuesto(grupo);
-          System.out.println(" Empleado re-asignado");
+          System.out.println("\n****************************");
+          System.out.println("\nEl empleado no pudo reasignarse");
       }
   }
 
@@ -75,14 +81,18 @@ public class AdministracionEmpleados {
       checkEmpId = getIndexEmpleadoFromList(id);
 
      if( checkEmpId == -1){
-         System.out.println("El empleado no  existe ");
+         System.out.println("\nEl empleado no  existe ");
 
+     }else if(empleados.get(checkEmpId).getPuesto().equalsIgnoreCase("maestro")){
+         empleados.get(checkEmpId).setGrupo("grupo");
+         System.out.println("\n*************************");
+         System.out.println("\nNombre: " + empleados.get(checkEmpId).getNombre());
+         System.out.println("ID: " + empleados.get(checkEmpId).getId());
+         System.out.println("Puesto: " + empleados.get(checkEmpId).getPuesto());
+         System.out.println("Grupo: " + empleados.get(checkEmpId).getGrupo());
      }else{
-         if(empleados.get(checkEmpId).getPuesto() != "maestro"){
-             empleados.get(checkEmpId).setGrupo("grupo");
-         }else{
-             System.out.println("El empleado no puede ser asignado, revisa que seaun maestro");
-         }
+         System.out.println("\n***********************************");
+         System.out.println("\nEl empleado debe ser maestro para desasignar");
      }
   }
 
@@ -93,10 +103,13 @@ public class AdministracionEmpleados {
 
       if( checkEmpId == -1) {
           System.out.println("El id no corresponde a ningun empleado, favor de verificar");
-      }else if ( (empleados.get(checkEmpId).getPuesto() == "maestro" && empleados.get(checkEmpId).getGrupo()== "grupo")
+      }else if ( (empleados.get(checkEmpId).getPuesto().equalsIgnoreCase("maestro")&& empleados.get(checkEmpId).getGrupo()== "grupo")
               || empleados.get(checkEmpId).getPuesto() == "administrador" || empleados.get(checkEmpId).getPuesto() =="director"){
 
+          System.out.println("\nEmpleados antes de la baja " + empleados.size());
             empleados.remove(checkEmpId);
+          System.out.println("\nEmpleados despues de la baja " +empleados.size());
+          System.out.println("\nEmpleado removido");
       }else{
           System.out.println("No se puede remover al empleado si tiene un grupo");
       }
@@ -118,45 +131,26 @@ public class AdministracionEmpleados {
 
   public void reporteEmpleadosPuesto(String puesto){
 
-       String puest = puesto.toLowerCase();
-
       for (int i = 0; i < empleados.size() ; i++) {
-          if(empleados.get(i).getPuesto() == puesto){
+          if(empleados.get(i).getPuesto().equalsIgnoreCase(puesto)){
               System.out.println("\n*************************");
               System.out.println("\n Nombre: " + empleados.get(i).getNombre());
               System.out.println("ID: " + empleados.get(i).getId());
               System.out.println("Puesto: " + empleados.get(i).getPuesto());
               System.out.println("Grupo: " + empleados.get(i).getGrupo());
 
-          }else{
-              System.out.println("no se encontro el puesto indicado");
           }
       }
-
-
-
-     /* for (int i = 0; i < empleados.size() ; i++) {
-          if(empleados.get(i).getPuesto() == puesto){
-              System.out.println("\n*************************");
-              System.out.println("\n Nombre: " + empleados.get(i).getNombre());
-              System.out.println("ID: " + empleados.get(i).getId());
-              System.out.println("Puesto: " + empleados.get(i).getPuesto());
-              System.out.println("Grupo: " + empleados.get(i).getGrupo());
-
-          }else{
-              System.out.println("No se encontro nadie con el puesto indicado");
-          }
-      }*/
   }
 
   public void reporteMaestrosNivel(String grupo){
 
       for (int i = 0; i < empleados.size() ; i++) {
 
-          if(empleados.get(i).getPuesto() == "maestro" && empleados.get(i).getGrupo() == grupo){
+          if(empleados.get(i).getPuesto().equalsIgnoreCase("maestro") && empleados.get(i).getGrupo().equalsIgnoreCase(grupo)){
 
               System.out.println("\n*************************");
-              System.out.println("\n Nombre: " + empleados.get(i).getNombre());
+              System.out.println("\nNombre: " + empleados.get(i).getNombre());
               System.out.println("ID: " + empleados.get(i).getId());
               System.out.println("Puesto: " + empleados.get(i).getPuesto());
               System.out.println("Grupo: " + empleados.get(i).getGrupo());
@@ -196,7 +190,7 @@ public class AdministracionEmpleados {
 
         schoolPersonal.altaEmpleado("Ada", 10007, "Maestro", "1roSecundaria");
         schoolPersonal.altaEmpleado("Cassandra", 10008, "Maestro", "2doSecundaria");
-        schoolPersonal.altaEmpleado("Mariana", 10009, "Administrativo", "3roSecundaria");
+        schoolPersonal.altaEmpleado("Mariana", 10009, "maestro", "3roSecundaria");
 
         schoolPersonal.altaEmpleado("Luxanna", 10000, "director", "-");
 
@@ -212,10 +206,18 @@ public class AdministracionEmpleados {
 
         //ASIGNAR GRUPO
 
-        schoolPersonal.asignarGrupo(10001, "1roKinder");
+        //schoolPersonal.asignarGrupo(10001, "2doKinder");
 
+        // DESASIGNAR GRUPO
+        //schoolPersonal.desasignarGrupo(10001);
 
+        //BAJA EMPLEADO
 
+        //schoolPersonal.bajaEmpleado(10000);
+
+        //IMPRIMIR EMPLEADOS
+
+        //schoolPersonal.imprimirReporteEmpleados();
 
         //IMPRIMIR POR PUESTO
 
@@ -223,7 +225,7 @@ public class AdministracionEmpleados {
 
         // IMPRIMIR MAESTROS POR GRUPO
 
-
+        schoolPersonal.reporteMaestrosNivel("3roSecundaria");
 
 
 
